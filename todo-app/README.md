@@ -1,4 +1,20 @@
+
+Utilizei o Create React App e alguns outros frameworks, abaixo vou botar todos os npms:
+
+npx create-react-app my-app
+
+npm install react-beautiful-dnd --save
+
+npm install @material-ui/core
+
+npm install --save styled-components
+
+npm install pretty-ms
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
