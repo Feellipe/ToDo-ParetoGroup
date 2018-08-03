@@ -1,0 +1,104 @@
+body{
+  margin-top: 35px; 
+}
+
+.App {
+  text-align: center;
+}
+
+.master-grid{
+  display: grid; 
+  grid-template-columns: repeat(11, 1fr );
+  grid-gap: 2.5em;
+  width: 100%;
+}
+
+.coluna{
+  min-width: 23vw;
+}
+
+.ToDo{
+grid-column: 2/4;
+}
+
+.Doing{
+grid-column: 5/7;
+}
+
+.Done{
+grid-column: 8/10;
+}
+
+.add-notes-dialog{
+  min-width: 350px;
+}
+
+.stopWatch{
+  max-width: 180px;
+  min-width: 100px;
+  padding: 2px 5px 10px 35px;
+  margin: 0 10px 10px 15px;
+  z-index: 1400;
+  display: flex;
+  position: fixed;
+  align-items: center; 
+}
+
+.div-add-notes {
+    z-index: 1400;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    left: auto;
+    right: 24px;
+   
+}
+/*.div-add-notes {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 1rem;
+  right: 1rem;
+  align-self: flex-end;
+}
+*/
+.div-add-notes .button-add-notes{
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+
+@media (max-width: 650px) {
+  body{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .master-grid{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  
+  }
+  
+  .coluna{
+    flex: 0 0 auto;  
+  }
+
+ 
+}
+
+@media (min-width: 800px){
+
+  .div-add-notes {
+      left: auto;
+      right: 24px;
+      bottom: 24px;
+  }
+
+  .stopWatch{
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+  }
+}
